@@ -292,21 +292,45 @@ margin: 80px 50px 80px 50px;
     box-shadow: 0 10px 10px 0 #5C6B73;
     height: 200 px;
     margin: 50px
+    
 }
 
 .h6 {
     font-size: 24;
     font-family: 'Zilla Slab', serif;
     font-weight: bold;
-    margin-left: 50px;
+    text-align: center;
+    margin-top: 10px;
+
 }
-    
+
+.textos2{
+    font-size: 24px;
+    font-family: 'Zilla Slab', serif;
+    margin: 10px;
+}
+
+
+
+/*Daily challenge grid*/
+.gridDaily {
+    display: grid;
+    grid-template-rows: 600px 3000px 280px ;
+}
+
+.gridDaily main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
 
 /*mobile style- index*/
 @media only screen and (max-width: 480px) {
     .gridContainer{
         display: grid;
         grid-template-rows: 290px 1000px 250px 80px;
+        justify-content: center;
     }
     
     
@@ -521,4 +545,20 @@ margin: 80px 50px 80px 50px;
     .c{grid-area:aside;}
     .d{grid-area:footer;}
 
+}
+
+/*animaciones*/
+.boton:hover{
+    transition: all 1s;
+    background-color: rgb(104, 144, 197);
+    
+}
+
+.contenedorfooter div a:hover{
+    transform: scale(1.5);
+    transition: all 1s;
+}
+
+.barradenavegación ul li a:hover{
+    color: rgb(71, 85, 216);
 }
